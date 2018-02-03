@@ -42,7 +42,7 @@ def user_is_followable(user):
 def follow_followers():
 	(_, _, recent_followers) = api.GetFollowersPaged()
 	followable_followers = list(filter(user_is_followable, recent_followers))
-	max_num_to_follow = 2
+	max_num_to_follow = 5
 	for follower in followable_followers[0:max_num_to_follow]:
 		api.CreateFriendship(follower.id)
 
