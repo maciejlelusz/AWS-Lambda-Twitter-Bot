@@ -9,13 +9,13 @@ api = twitter.Api(**credentials)
 
 def get_tweets():
   track ='q=%23'
-  track += 'wine'
+  track += 'cloud'
   track += '-filter%3'
   track += 'Alinks'
-  track += '&lang=en'
-  track += '&count=20'
+  track += '&lang=pl'
+  track += '&count=50'
   
-  results = api.GetSearch(raw_query=track)
+  result = api.GetSearch(raw_query=track)
   
   return result
 

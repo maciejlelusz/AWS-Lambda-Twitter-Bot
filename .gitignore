@@ -1,6 +1,8 @@
-# Zip & Credentials
+# Zip & Credentials, subfolders
+*/
 *.zip
 credentials.json
+*.swp
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
