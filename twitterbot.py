@@ -15,7 +15,7 @@ def get_tweets():
   track += '&lang=en'
   track += '&count=20'
   
-  results = api.GetSearch(raw_query=track)
+  result = api.GetSearch(raw_query=track)
   
   return result
 
