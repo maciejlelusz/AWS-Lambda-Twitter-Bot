@@ -3,7 +3,7 @@
 
 # AWS Lambda Twitter Bot
 
-Simple AWS Lambda Twitter Bot based on Python
+Simple AWS Lambda ready Twitter Bot based on Python
 
 Thanks to:
  - https://annekjohnson.com/blog/2017/06/python-twitter-bot-on-aws-lambda/index.html
