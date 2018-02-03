@@ -1,6 +1,5 @@
 import twitter
 import json
-import random
 
 with open('credentials.json') as file:
 	credentials = json.loads(file.read())
