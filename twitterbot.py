@@ -9,17 +9,20 @@ api = twitter.Api(**credentials)
 
 def get_tweets():
   track = 'q='
-  track += '%20cloud%20OR'
+  track += '%20AWS%20OR'
+  track += '%20Azure%20OR'
+  track += '%20GCE%20OR'
   track += '%20containers%20OR'
   track += '%20docker%20OR'
   track += '%20datacenter%20OR'
   track += '%20sdn'
-  track += '-filter%3safe'
-  track += '-filter%3Alinks'
-  track += '-filter%3Areplies'
-  track += '+filter%3Aretweets'
-  track += '&lang=pl'
-  track += '&count=50'
+  track += '%20exclude%3Aretweets'
+  track += '%20exclude%3Areplies'
+  track += '%20include%3Alinks'
+  track += '%20min_retweets%3A5'
+  track += '%20min_faves%3A5'
+  track += '%20+filter%3Aretweets'
+  track += '%lang%3en'
   
   result = api.GetSearch(raw_query=track)
   
