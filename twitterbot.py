@@ -14,6 +14,7 @@ def get_tweets():
   track += '%20GCE%20OR'
   track += '%20containers%20OR'
   track += '%20docker%20OR'
+  track += '%20kubernetes%20OR'
   track += '%20datacenter%20OR'
   track += '%20sdn'
   track += '%20exclude%3Aretweets'
@@ -21,8 +22,7 @@ def get_tweets():
   track += '%20include%3Alinks'
   track += '%20min_retweets%3A5'
   track += '%20min_faves%3A5'
-  track += '%20+filter%3Aretweets'
-  track += '%lang%3en'
+  track += '%20lang%3Aen'
   
   result = api.GetSearch(raw_query=track)
   
