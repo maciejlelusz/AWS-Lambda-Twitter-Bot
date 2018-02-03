@@ -36,6 +36,26 @@ def retweet(tweets):
     
     api.PostRetweet(to_retweet.id)
 
+def user_is_followable(user):
+    return not user.following and not user.protected
+
+def follow_followers():
+    (_, _, recent_followers) = api.GetFollowersPaged()
+    followable_followers = list(filter(user_is_followable, recent_followers))
+    max_num_to_follow = 2
+    for follower in followable_followers[0:max_num_to_follow]:
+        api.CreateFriendship(follower.id)
+
+def follow_someone(tweets):
+    users = list(map(lambda t: t.user, tweets))
+    followable_users = list(filter(user_is_followable, users))
+    if not followable_users:
+        return False
+    user_to_follow = random.choice(followable_users)
+    api.CreateFriendship(user_to_follow.id)
+
 def lambda_handler(_event_json, _context):
   tweets = get_tweets()
   retweet(tweets)
+  follow_someone(tweets)
+  follow_followers()
