@@ -25,7 +25,7 @@ def retweet(tweets):
 
     to_retweet = max(tweets, key=lambda status: status.favorite_count + status.retweet_count)
     
-    api.PostRetweet(status_to_retweet.id)
+    api.PostRetweet(to_retweet.id)
 
 def lambda_handler(_event_json, _context):
   tweets = get_tweets()
