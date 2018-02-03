@@ -8,10 +8,16 @@ with open('credentials.json') as file:
 api = twitter.Api(**credentials)
 
 def get_tweets():
-  track ='q=%23'
-  track += 'cloud'
-  track += '-filter%3'
-  track += 'Alinks'
+  track = 'q=%23'
+  track += '%23cloud%23OR'
+  track += '%23containers%23OR'
+  track += '%23docker%23OR'
+  track += '%23datacenter%23OR'
+  track += '%23sdn'
+  track += '-filter%3safe'
+  track += '-filter%3Alinks'
+  track += '-filter%3Areplies'
+  track += '+filter%3Aretweets'
   track += '&lang=pl'
   track += '&count=50'
   
