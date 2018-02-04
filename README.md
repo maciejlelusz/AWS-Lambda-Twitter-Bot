@@ -1,5 +1,4 @@
 ![Python 2.7](https://img.shields.io/badge/python-2.7-blue.svg)
-![Python 3.5](https://img.shields.io/badge/python-3.5-blue.svg)
 
 # AWS Lambda Twitter Bot
 
