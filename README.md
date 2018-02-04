@@ -21,4 +21,5 @@ Thanks to:
  - https://dototot.com/how-to-write-a-twitter-bot-with-python-and-tweepy/
  - https://github.com/rhiever/TwitterFollowBot
  - http://firstmonday.org/article/view/2745/2681 (!)
+ - https://www.silkstream.net/blog/2014/06/retweeting-with-your-twython-twitter-bot.html
 
