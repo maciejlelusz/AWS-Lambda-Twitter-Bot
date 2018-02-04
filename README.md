@@ -15,3 +15,5 @@ Thanks to:
  - https://github.com/davharris/Titlebot
  - https://dototot.com/how-to-write-a-twitter-bot-with-python-and-tweepy/
  - https://github.com/rhiever/TwitterFollowBot
+ - http://firstmonday.org/article/view/2745/2681 (!)
+
