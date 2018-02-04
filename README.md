@@ -2,7 +2,7 @@
 
 # AWS Lambda Twitter Bot
 
-Simple AWS Lambda ready Twitter Bot based on Python. It's preconfigured to retweet and automatically follow your folowers and people who gain the most retweets from gathered twwets during run.
+Simple AWS Lambda ready Twitter Bot based on Python. It's preconfigured to retweet and automatically follow your folowers and people who gain the most retweets from gathered tweets during run.
 
 You can configure keywords by editing line:
 
